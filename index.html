@@ -602,11 +602,12 @@
             <div class="text-container">
               <h2>Contact Us For A Quote</h2>
 
-              <form>
+              <form name="contact" netlify>
                 <div class="mb-3">
                   <input
                     type="text"
                     class="form-control"
+                    name="name"
                     placeholder="Enter name"
                   />
                 </div>
@@ -614,6 +615,7 @@
                   <input
                     type="email"
                     class="form-control"
+                    name="email"
                     placeholder="Enter email"
                   />
                 </div>
@@ -621,12 +623,14 @@
                   <input
                     type="text"
                     class="form-control"
+                    name="phone"
                     placeholder="Enter phone"
                   />
                 </div>
                 <div class="mb-3">
                   <textarea
                     class="form-control"
+                    name="message"
                     placeholder="Enter message"
                     rows="8"
                   ></textarea>
