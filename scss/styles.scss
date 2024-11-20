@@ -1,0 +1,159 @@
+//define xl-text size for the class
+.xl-text {
+    font-size: 75px;
+  }
+  
+  //btn outline style
+  .btn-outline-secondary {
+    color: var(--bs-secondary);
+  }
+  
+  //button hover style, & means btn being hovred
+  .btn-outline-secondary {
+    &:hover {
+      color: #fff;
+    }
+  }
+  
+  //position header 1st background img with negative left 
+  //postion, set width & transparency
+  .header .decoration-star {
+    top: 80px;
+    left: -200px;
+    width: 500px;
+    opacity: 0.7;
+  }
+  
+  //position header 2nd background img with negative right 
+  //postion, set width & transparency
+  .header .decoration-star-2 {
+    top: 80px;
+    right: -200px;
+    width: 500px;
+    opacity: 0.7;
+  }
+  
+  //navbar transition delay & effect
+  .navbar {
+    transition: all 0.5s ease-in-out;
+  }
+  
+  //navbar-sticky class background, shadow, opacity
+  .navbar-sticky {
+    background: #fff;
+    opacity: 0.9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  //details section background img left
+  .details .decoration-star {
+    left: -200px;
+    width: 500px;
+  }
+  
+  //details section background img right
+  .details-2 .decoration-star {
+    right: -200px;
+    width: 500px;
+  }
+  
+  //img in contact form, left and width
+  .contact .decoration-star {
+    left: -300px;
+    width: 600px;
+  }
+  
+  //to-top-btn class attributes
+  .to-top-btn {
+    position: fixed;
+    z-index: 20;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    width: 52px;
+    height: 52px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    background-color: #44434a;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  //to-top-btn class hover
+  .to-top-btn {
+    &:hover {
+      background-color: #1d1d21;
+    }
+  }
+  
+  //style to-top btn
+  .to-top-btn {
+    img {
+      margin-bottom: 0.25rem;
+      width: 18px;
+    }
+  }
+  
+  //show class means full opacity
+  //show to-top when required
+  .show {
+    opacity: 1;
+  }
+  
+  //for >= tablet size 
+  @media (max-width: 992px) {
+    //xl-text size 
+    .xl-text {
+      font-size: 50px;
+    }
+  
+    //also, push 'contact us' btn a little down
+    .navbar {
+      .btn-outline-secondary {
+        margin-top: 20px;
+      }
+    }
+  
+    //get rid of header margin top
+    .header {
+      margin-top: 0px !important;
+      text-align: center;
+    }
+  
+    //reduce 1st background img negative margin left
+    //and reduce width 
+    .header .decoration-star {
+      left: -100px;
+      width: 250px;
+    }
+  
+    //reduce 2nd background img negative margin right 
+     //and reduce width 
+    .header .decoration-star-2 {
+      right: -100px;
+      width: 250px;
+    }
+  
+    //increase header img top margin
+    .header .image-container {
+      margin-top: 30px;
+    }
+  
+    //give border bottom and set margins to services area cols
+    .services .col-md-4 {
+      border-bottom: 1px #ccc solid;
+      margin: 10px 0;
+    }
+  
+    //reduce top margin to details-2 
+    .details-2 {
+      margin-top: 20px !important;
+    }
+  
+    //push down decoration-star img in details-2
+    .details-2 .decoration-star {
+      top: 300px;
+    }
+  }
+  
